@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Week </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFB6C1, #FF69B4); /* Soft pink gradient */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            animation: backgroundAnimation 10s ease infinite; /* Smooth background color transition */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            background-color: rgba(255, 99, 131, 0.9); /* Slightly transparent pink */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh; /* Ensure content takes up at least the full viewport height */
+        }
+
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #FF1493; /* Deep pink */
+        }
+
+        .gift {
+            font-size: 20px;
+            color: #FFD700; /* Gold */
+            margin-bottom: 20px;
+        }
+
+        .poem {
+            font-size: 18px;
+            margin-top: 30px;
+            font-style: italic;
+            color: #FFDAB9; /* Light peach */
+        }
+
+        .song-player {
+            margin-top: 20px;
+        }
+
+        .image-container {
+            margin-top: 30px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Subtle zoom effect on hover */
+        }
+
+        .footer {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #FFB6C1, #FF69B4); }
+            50% { background: linear-gradient(135deg, #FF6347, #FF1493); }
+            100% { background: linear-gradient(135deg, #FFB6C1, #FF69B4); }
+        }
+
+        /* Floating hearts animation */
+        .heart {
+            position: absolute;
+            color: #FF1493;
+            font-size: 2rem;
+            animation: floatHearts 6s ease-in infinite;
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(0) rotate(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-200px) rotate(180deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        .heart:nth-child(odd) {
+            animation-duration: 8s;
+        }
+
+        .heart:nth-child(even) {
+            animation-duration: 10s;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Happy Valentine's Week!</h1>
+</header>
+
+<div class="container">
+    <p class="message">Hello love, the Valentine week has started! Here's your gift for the day:</p>
+
+    <p class="gift">A beautiful song to start the evening with some love and joy. Enjoy!</p>
+
+    <!-- Romantic Poem in English -->
+    <p class="poem">In the smile of your face, my  world resides,<br>
+    Every moment, I want to look at you, this is my greatest desire.<br>
+     samjhi theoderon.</p>
+
+    <!-- Audio Player for "Adiye" song -->
+    <div class="song-player">
+        <audio controls>
+            <source src="Adiye-MassTamilan.fm.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="image-container">
+        <p>Here's a special picture for you. Feel free to insert your photo here:</p>
+        <img src="1.jpg" alt="Your Valentine Gift">
+    </div>
+
+    <p class="footer">Sending you all my love, always.</p>
+</div>
+
+<!-- Floating hearts -->
+<div class="heart" style="top: 10%; left: 20%;">💖</div>
+<div class="heart" style="top: 30%; left: 50%;">💘</div>
+<div class="heart" style="top: 50%; left: 70%;">💝</div>
+<div class="heart" style="top: 70%; left: 40%;">💖</div>
+<div class="heart" style="top: 80%; left: 60%;">💘</div>
+<div class="heart" style="top: 20%; left: 80%;">💝</div>
+<div class="heart" style="top: 40%; left: 10%;">💖</div>
+<div class="heart" style="top: 60%; left: 30%;">💘</div>
+
+</body>
+</html>
